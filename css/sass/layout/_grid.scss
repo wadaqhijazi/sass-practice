@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+
+  @media #{$minSmall} {
+    width: 750px;
+  }
+  @media #{$minMeduim} {
+    width: 970px;
+  }
+  @media #{$minLarg} {
+    width: 1000px;
+  }
+}
+.header .container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+// grid system in player
+.ourplayer {
+  .container {
+    .player-row {
+      display: flex;
+      gap: 10px;
+      position: relative;
+    }
+  }
+}
+
+.lorem .container {
+  .imgs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+  }
+}
+.footer {
+  .container {
+    .blog {
+      display: flex;
+    }
+  }
+}

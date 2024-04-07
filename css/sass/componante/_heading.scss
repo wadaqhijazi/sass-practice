@@ -1,0 +1,26 @@
+.head-with-border {
+  position: relative;
+  h3 {
+    background-color: $redColor;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin: 40px auto;
+    width: 400px;
+    text-align: center;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: $grayColor;
+      top: 50%;
+      z-index: -1;
+      left: 0;
+    }
+  }
+}
